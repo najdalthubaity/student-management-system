@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+xmlns="http://javafx.com/javafx/26"
+xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.finalproject.AddStudentController">
+
+    <children>
+
+        <Label layoutX="225.0" layoutY="30.0"
+               text="Add Student">
+            <font>
+                <Font size="24" />
+            </font>
+        </Label>
+
+        <TextField fx:id="nameField"
+                   layoutX="180"
+                   layoutY="100"
+                   prefWidth="220"
+                   promptText="Student Name" />
+
+        <TextField fx:id="idField"
+                   layoutX="180"
+                   layoutY="150"
+                   prefWidth="220"
+                   promptText="Student ID" />
+
+        <TextField fx:id="majorField"
+                   layoutX="180"
+                   layoutY="200"
+                   prefWidth="220"
+                   promptText="Major" />
+
+        <Button layoutX="262.0"
+                layoutY="250"
+                text="Save"
+                onAction="#saveStudent" />
+        
+        <Label fx:id="messageLabel"
+               layoutX="210.0"
+               layoutY="300"
+               prefWidth="250" />
+        
+         <Button 
+          layoutX="27.0"
+          layoutY="361.0"
+          onAction="#back"
+          text="Back" />
+
+
+    </children>
+
+</AnchorPane>

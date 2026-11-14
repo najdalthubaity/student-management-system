@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" cache="true" prefHeight="415.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalproject.HomeController">
+
+    <children>
+        <Label alignment="CENTER" layoutX="136.0" layoutY="107.0" prefHeight="58.0" prefWidth="317.0" text="welcome To Home Page" textAlignment="CENTER" textFill="#6a4f91" textOverrun="CLIP">
+            <font>
+                <Font size="28.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <effect>
+                <DropShadow offsetY="2.0" />
+            </effect>
+        </Label>
+       
+        <Button 
+            layoutX="239.0"
+            layoutY="195.0"
+            onAction="#openAddStudent"
+            text="Add Student" />
+       
+        <Button 
+            layoutX="234.0"
+            layoutY="277.0" 
+            onAction="#openViewStudents" 
+            text="View Students" />
+      
+        <Button
+            layoutX="241.0"
+            layoutY="238.0" 
+            onAction="#openGrades"
+            text="Add Grades" />
+        
+                <Button 
+                    layoutX="255.0"
+                    layoutY="315.0"
+                    onAction="#openReports"
+                    text="Report" />
+
+
+       
+    </children>
+
+</AnchorPane>
